@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRAID — First Aid Coffee | Prievidza</title>
+<meta name="description" content="Kaviareň s výberovou kávou v centre Prievidze. Espresso, filter, domáce limonády a čerstvé croissanty — každý deň od rána.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Figtree:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:color-mix(in srgb, #14100e 82%, transparent);border-bottom:1px solid rgba(240,230,214,.1)">
+  <div class="wrap site-nav" style="display:flex;align-items:center;gap:var(--space-6);padding:var(--space-3) var(--space-6)">
+    <a href="#top" style="margin-right:auto;display:flex;align-items:center;gap:12px;text-decoration:none">
+      <img src="assets/logo-fraid.png" alt="FRAID" style="height:24px;width:auto;filter:brightness(0) invert(1)">
+      <span style="font-family:var(--font-body);font-weight:700;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,230,214,.55)">First Aid Coffee</span>
+    </a>
+    <nav style="display:flex;gap:var(--space-4);align-items:center">
+      <a href="#o-nas" class="nav-link" style="font-size:14px;color:#f0e6d6;text-decoration:none">O nás</a>
+      <a href="#menu" class="nav-link" style="font-size:14px;color:#f0e6d6;text-decoration:none">Menu</a>
+      <a href="#galeria" class="nav-link" style="font-size:14px;color:#f0e6d6;text-decoration:none">Galéria</a>
+      <a href="#recenzie" class="nav-link" style="font-size:14px;color:#f0e6d6;text-decoration:none">Recenzie</a>
+      <a href="#kontakt" class="btn btn-primary" style="text-decoration:none;background:var(--color-accent-500);color:#14100e">Nájsť nás</a>
+    </nav>
+  </div>
+</header>
+
+<section id="top" style="position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:calc(var(--space-8) * 2.4) var(--space-6);overflow:hidden;text-align:center">
+  <div style="position:absolute;inset:0;background-image:url('assets/hero-bg.jpg');background-size:cover;background-position:center 40%;filter:brightness(.42) saturate(.85) contrast(1.05);transform:scale(1.04)"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(20,16,14,.72) 0%, rgba(20,16,14,.45) 42%, rgba(20,16,14,.96) 100%)"></div>
+  <svg class="chalk draw always floaty" viewBox="0 0 120 120" aria-hidden="true" style="position:absolute;left:5%;top:22%;width:clamp(90px,11vw,168px);z-index:2;opacity:.6">
+    <path d="M24 52 h58 v22 a29 29 0 0 1 -29 29 h0 a29 29 0 0 1 -29 -29 z"></path>
+    <path d="M82 58 h12 a13 13 0 0 1 0 26 h-12"></path>
+    <path d="M18 110 h76"></path>
+    <path class="chalk-accent" d="M42 38 c8 -8 -8 -14 0 -22"></path>
+    <path class="chalk-accent" d="M60 38 c8 -8 -8 -14 0 -22"></path>
+    <path class="chalk-accent" d="M78 38 c8 -8 -8 -14 0 -22"></path>
+  </svg>
+  <svg class="chalk draw always floaty" viewBox="0 0 120 120" aria-hidden="true" style="position:absolute;right:6%;top:30%;width:clamp(80px,9vw,140px);z-index:2;opacity:.55;animation-delay:-4s">
+    <ellipse cx="60" cy="60" rx="30" ry="40" transform="rotate(24 60 60)"></ellipse>
+    <path class="chalk-accent" d="M42 34 c14 16 14 36 2 52"></path>
+    <path d="M14 96 c14 -8 28 -8 40 0"></path>
+  </svg>
+  <div class="hero-rise" style="position:relative;z-index:3;max-width:1000px;width:100%;display:flex;flex-direction:column;align-items:center;gap:calc(var(--space-8) * .9)">
+    <span class="tag" style="background:rgba(240,230,214,.12);color:var(--color-accent-300);letter-spacing:.24em;text-transform:uppercase;font-size:11px;font-weight:700;padding:9px 20px">Prievidza · výberová káva</span>
+    <img src="assets/logo-fraid.png" alt="FRAID — First Aid Coffee" style="width:min(78vw,720px);height:auto;filter:brightness(0) invert(1) drop-shadow(0 18px 50px rgba(0,0,0,.6))">
+    <h1 style="font-size:clamp(22px,2.9vw,40px);line-height:1.15;margin:0;color:rgba(247,239,226,.92);text-transform:uppercase;letter-spacing:.06em">Prvá pomoc je káva</h1>
+    <p style="font-size:20px;max-width:52ch;color:rgba(240,230,214,.75);margin:0;line-height:1.65">Kaviareň s výberovou kávou v centre Prievidze. Espresso, filter, domáce limonády a čerstvé croissanty — každý deň od rána.</p>
+    <div style="display:flex;gap:var(--space-4);flex-wrap:wrap;align-items:center;justify-content:center">
+      <a href="#menu" class="btn btn-primary" style="text-decoration:none;padding:19px 44px;font-size:15px;letter-spacing:.14em;text-transform:uppercase;background:var(--color-accent-500);color:#14100e;border:2px solid var(--color-accent-500);box-shadow:0 14px 34px rgba(198,113,57,.35)">Pozrieť menu</a>
+      <a href="https://maps.google.com/?q=Gust%C3%A1va+%C5%A0v%C3%A9niho+1F,+971+01+Prievidza" target="_blank" rel="noopener" class="btn" style="text-decoration:none;padding:19px 44px;font-size:15px;letter-spacing:.14em;text-transform:uppercase;border:2px solid rgba(240,230,214,.55);color:#f7efe2;background:rgba(20,16,14,.25)">Navigovať →</a>
+    </div>
+    <div style="display:flex;gap:calc(var(--space-8) * 1.4);flex-wrap:wrap;justify-content:center;margin-top:var(--space-6)">
+      <div>
+        <div style="font-family:'Archivo Black',sans-serif;font-size:36px;line-height:1;color:#f7efe2">4,9<span style="font-size:16px;color:rgba(240,230,214,.55)">/5</span></div>
+        <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,230,214,.55);margin-top:6px">Google · 57 recenzií</div>
+      </div>
+      <div>
+        <div style="font-family:'Archivo Black',sans-serif;font-size:36px;line-height:1;color:#f7efe2">€1–5</div>
+        <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,230,214,.55);margin-top:6px">Bežná útrata</div>
+      </div>
+      <div>
+        <div style="font-family:'Archivo Black',sans-serif;font-size:36px;line-height:1;color:#f7efe2">8:00</div>
+        <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,230,214,.55);margin-top:6px">Otvárame denne</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="o-nas" data-reveal style="position:relative;background:#1c1613;padding:calc(var(--space-8) * 2.3) var(--space-6);overflow:hidden">
+  <svg class="chalk draw floaty" viewBox="0 0 140 120" aria-hidden="true" style="position:absolute;right:1.5%;bottom:2%;width:clamp(90px,10vw,150px);opacity:.28;z-index:0;pointer-events:none">
+    <path d="M28 44 c0 -14 12 -22 26 -22 s26 8 26 22"></path>
+    <path d="M22 46 h68 l-8 54 a12 12 0 0 1 -12 10 h-28 a12 12 0 0 1 -12 -10 z"></path>
+    <path class="chalk-accent" d="M44 26 c6 -8 -6 -12 0 -20"></path>
+    <path class="chalk-accent" d="M64 26 c6 -8 -6 -12 0 -20"></path>
+    <path d="M96 62 c22 -6 30 12 16 22"></path>
+  </svg>
+  <div class="wrap split-2" style="position:relative;z-index:1;gap:var(--space-8);align-items:start">
+    <div>
+      <h6 style="color:var(--color-accent-400);margin-bottom:var(--space-3);font-family:var(--font-body);font-weight:700">O kaviarni</h6>
+      <h2 style="font-size:clamp(34px,4.4vw,58px);max-width:16ch;margin-bottom:var(--space-4);color:#f7efe2">Malý podnik, veľká pozornosť ku káve.</h2>
+    </div>
+    <div style="padding-top:var(--space-6)">
+      <p style="font-size:17px;color:rgba(240,230,214,.72)">FRAID je kaviareň s výberovou kávou na Gustáva Švéniho v Prievidzi. Pripravujeme espresso a filter z čerstvo praženej kávy, sezónne limonády s ovocím a k tomu croissanty, ktoré vonia celá ulica.</p>
+      <p style="font-size:17px;color:rgba(240,230,214,.72)">Chodí sa k nám na rannú dávku pred prácou, na pokojnú kávu cez deň aj na dlhé rozhovory pri stolíku vonku. Bez zhonu, bez pozlátka — len dobre pripravená káva a priateľská obsluha.</p>
+      <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-4)">
+        <span class="tag" style="background:rgba(198,113,57,.18);color:var(--color-accent-300)">Výberová káva</span>
+        <span class="tag" style="background:rgba(122,138,94,.2);color:var(--color-accent-2-300)">Sezónne limonády</span>
+        <span class="tag" style="background:rgba(240,230,214,.1);color:rgba(240,230,214,.75)">Terasa</span>
+        <span class="tag" style="background:rgba(240,230,214,.1);color:rgba(240,230,214,.75)">Káva so sebou</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" data-reveal class="wrap" style="position:relative;padding:calc(var(--space-8) * 2.3) var(--space-6)">
+  <svg class="chalk draw floaty" viewBox="0 0 160 90" aria-hidden="true" style="position:absolute;right:var(--space-6);top:calc(var(--space-8) * 2);width:clamp(120px,14vw,220px);opacity:.4;animation-delay:-3s;z-index:0;pointer-events:none">
+    <ellipse cx="34" cy="46" rx="20" ry="26" transform="rotate(-18 34 46)"></ellipse>
+    <path class="chalk-accent" d="M26 26 c10 12 10 30 0 42"></path>
+    <ellipse cx="80" cy="52" rx="20" ry="26" transform="rotate(12 80 52)"></ellipse>
+    <path class="chalk-accent" d="M74 32 c10 12 10 30 0 42"></path>
+    <ellipse cx="126" cy="42" rx="20" ry="26" transform="rotate(-6 126 42)"></ellipse>
+    <path class="chalk-accent" d="M120 22 c10 12 10 30 0 42"></path>
+  </svg>
+  <h6 style="color:var(--color-accent-400);margin-bottom:var(--space-3);font-family:var(--font-body);font-weight:700">Menu</h6>
+  <h2 style="font-size:clamp(34px,4.4vw,58px);margin-bottom:calc(var(--space-8) * 1.3);max-width:18ch;color:#f7efe2">Čo u nás nájdete</h2>
+  <div class="grid-3" style="gap:var(--space-6);margin-bottom:calc(var(--space-8) * 1.4)">
+    <figure>
+      <div class="zoom"><img src="assets/drink-raspberry.jpg" alt="Malinová limonáda" style="width:100%;aspect-ratio:4/3;object-fit:cover;filter:saturate(.95) brightness(.95)"></div>
+      <figcaption style="display:flex;justify-content:space-between;font-size:15px;font-family:var(--font-body);margin-top:var(--space-3);color:#f0e6d6"><span style="font-weight:700">Malinová limonáda</span><span>4,20 €</span></figcaption>
+    </figure>
+    <figure>
+      <div class="zoom"><img src="assets/drink-blackberry.jpg" alt="Černicová limonáda" style="width:100%;aspect-ratio:4/3;object-fit:cover;filter:saturate(.95) brightness(.95)"></div>
+      <figcaption style="display:flex;justify-content:space-between;font-size:15px;font-family:var(--font-body);margin-top:var(--space-3);color:#f0e6d6"><span style="font-weight:700">Černicová limonáda</span><span>4,20 €</span></figcaption>
+    </figure>
+    <figure>
+      <div class="zoom"><img src="assets/drink-gooseberry.jpg" alt="Egrešová limonáda" style="width:100%;aspect-ratio:4/3;object-fit:cover;filter:saturate(.95) brightness(.95)"></div>
+      <figcaption style="display:flex;justify-content:space-between;font-size:15px;font-family:var(--font-body);margin-top:var(--space-3);color:#f0e6d6"><span style="font-weight:700">Egrešová limonáda</span><span>4,20 €</span></figcaption>
+    </figure>
+  </div>
+  <div class="split-2" style="gap:var(--space-8)">
+    <div>
+      <h4 style="margin-bottom:var(--space-3);color:#f7efe2">Káva</h4>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Espresso</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">výberová káva</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">1,80 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Cappuccino</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">hodvábne mlieko</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">2,60 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Flat white</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">dvojité espresso</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">2,90 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Filter / V60</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">sezónny výber</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">3,20 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Ľadové latte</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">cez leto</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">3,00 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Káva so sebou</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">vlastný pohár −0,20 €</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">od 1,80 €</span>
+      </div>
+    </div>
+    <div>
+      <h4 style="margin-bottom:var(--space-3);color:#f7efe2">K tomu</h4>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Croissant</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">maslový, čerstvý</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">2,20 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Domáca limonáda</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">malina / černica / egreš</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">4,20 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Matcha latte</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">ceremoniálna</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">3,60 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Horúca čokoláda</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">tmavá 70 %</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">3,20 €</span>
+      </div>
+      <div class="menu-row" style="display:flex;align-items:baseline;gap:var(--space-3);padding:11px 0;border-bottom:1px solid rgba(240,230,214,.12)">
+        <span style="font-weight:600;font-size:16px;color:#f0e6d6">Sladký zákusok</span>
+        <span style="flex:1;font-size:13px;color:rgba(240,230,214,.45)">podľa dňa</span>
+        <span style="font-family:'Archivo Black',sans-serif;font-size:15px;color:var(--color-accent-300)">od 2,50 €</span>
+      </div>
+      <p style="font-size:13px;color:rgba(240,230,214,.45);margin-top:var(--space-4)">Ceny sú orientačné — aktuálny cenník nájdete na mieste.</p>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" data-reveal style="background:#1c1613;padding:calc(var(--space-8) * 2.3) var(--space-6)">
+  <div class="wrap">
+    <h6 style="color:var(--color-accent-2-300);margin-bottom:var(--space-3);font-family:var(--font-body);font-weight:700">Galéria</h6>
+    <h2 style="font-size:clamp(34px,4.4vw,58px);margin-bottom:var(--space-8);color:#f7efe2">Ako to u nás vyzerá</h2>
+    <div class="gallery-grid" style="gap:var(--space-3)">
+      <div class="zoom" style="grid-column:span 2;grid-row:span 2"><img src="assets/storefront.jpg" alt="Výklad FRAID" style="width:100%;height:100%;object-fit:cover;filter:brightness(.92)"></div>
+      <div class="zoom"><img src="assets/drink-blackberry.jpg" alt="Černicová limonáda" style="width:100%;height:100%;object-fit:cover;filter:brightness(.92)"></div>
+      <div class="zoom" style="grid-row:span 2"><img src="assets/drink-gooseberry.jpg" alt="Egrešová limonáda" style="width:100%;height:100%;object-fit:cover;filter:brightness(.92)"></div>
+      <div class="zoom"><img src="assets/drink-raspberry.jpg" alt="Malinová limonáda" style="width:100%;height:100%;object-fit:cover;filter:brightness(.92)"></div>
+    </div>
+  </div>
+</section>
+
+<section id="recenzie" data-reveal class="wrap" style="padding:calc(var(--space-8) * 2.3) var(--space-6)">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:var(--space-6);flex-wrap:wrap;margin-bottom:var(--space-8)">
+    <div>
+      <h6 style="color:var(--color-accent-400);margin-bottom:var(--space-3);font-family:var(--font-body);font-weight:700">Recenzie</h6>
+      <h2 style="font-size:clamp(34px,4.4vw,58px);margin:0;color:#f7efe2">Čo hovoria hostia</h2>
+    </div>
+    <div style="display:flex;gap:var(--space-4)">
+      <div class="card r-card" style="min-width:150px;background:#231b17;border:1px solid rgba(240,230,214,.1)">
+        <div class="card-kicker" style="color:var(--color-accent-300)">Google</div>
+        <div style="font-family:'Archivo Black',sans-serif;font-size:34px;line-height:1;color:#f7efe2">4,9/5</div>
+        <div class="card-meta" style="color:rgba(240,230,214,.5)">57 recenzií</div>
+      </div>
+      <div class="card r-card" style="min-width:150px;background:#231b17;border:1px solid rgba(240,230,214,.1)">
+        <div class="card-kicker" style="color:var(--color-accent-2-300)">Infobel</div>
+        <div style="font-family:'Archivo Black',sans-serif;font-size:34px;line-height:1;color:#f7efe2">5/5</div>
+        <div class="card-meta" style="color:rgba(240,230,214,.5)">48 recenzií</div>
+      </div>
+    </div>
+  </div>
+  <div class="grid-3" style="gap:var(--space-6)">
+    <div class="card r-card" style="padding:var(--space-6);background:#1c1613;border:1px solid rgba(240,230,214,.1)">
+      <div style="font-size:15px;letter-spacing:.1em;color:var(--color-accent-400)">★★★★★</div>
+      <p style="font-size:16px;line-height:1.6;margin:0;color:rgba(240,230,214,.78)">Perfektná atmosféra, príjemná obsluha, perfektná chuť kávy. V dnešnej dobe je strašne málo kaviarní, ktoré majú kľudnú atmosféru a profesionálne priateľský prístup.</p>
+      <div class="card-meta" style="margin-top:auto;color:rgba(240,230,214,.45);display:flex;flex-wrap:wrap;gap:0 6px"><span style="font-weight:700;color:#f0e6d6">Viktória Szombathelyiová</span><span>pred 4 mesiacmi</span></div>
+    </div>
+    <div class="card r-card" style="padding:var(--space-6);background:#1c1613;border:1px solid rgba(240,230,214,.1)">
+      <div style="font-size:15px;letter-spacing:.1em;color:var(--color-accent-400)">★★★★★</div>
+      <p style="font-size:16px;line-height:1.6;margin:0;color:rgba(240,230,214,.78)">Boli sme ochutnať kávičku v novej kaviarni. Káva bola dobre pripravená, mali sme 3× cappuccino a 2× espresso. Na základe mojej skúsenosti odporúčam.</p>
+      <div class="card-meta" style="margin-top:auto;color:rgba(240,230,214,.45);display:flex;flex-wrap:wrap;gap:0 6px"><span style="font-weight:700;color:#f0e6d6">Natália Martišková</span><span>pred 4 mesiacmi</span></div>
+    </div>
+    <div class="card r-card" style="padding:var(--space-6);background:#1c1613;border:1px solid rgba(240,230,214,.1)">
+      <div style="font-size:15px;letter-spacing:.1em;color:var(--color-accent-400)">★★★★☆</div>
+      <p style="font-size:16px;line-height:1.6;margin:0;color:rgba(240,230,214,.78)">Príjemná kaviareň v centre. Káva bola dobrá, príjemné posedenie a pekné prostredie priamo pri ulici.</p>
+      <div class="card-meta" style="margin-top:auto;color:rgba(240,230,214,.45);display:flex;flex-wrap:wrap;gap:0 6px"><span style="font-weight:700;color:#f0e6d6">Marián Chovanec</span><span>pred mesiacom</span></div>
+    </div>
+  </div>
+  <p style="font-size:13px;color:rgba(240,230,214,.45);margin-top:var(--space-4)">Recenzie prebrané z Google a Infobel.</p>
+</section>
+
+<section id="kontakt" data-reveal style="background:#1c1613;padding:calc(var(--space-8) * 2.3) var(--space-6)">
+  <div class="wrap split-2" style="gap:var(--space-8);align-items:start">
+    <div>
+      <h6 style="color:var(--color-accent-400);margin-bottom:var(--space-3);font-family:var(--font-body);font-weight:700">Otváracie hodiny</h6>
+      <h2 style="font-size:clamp(34px,4.4vw,58px);margin-bottom:var(--space-6);color:#f7efe2">Zastavte sa</h2>
+      <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(240,230,214,.12);font-size:16px;color:rgba(240,230,214,.8)">
+        <span>Pondelok</span><span style="font-weight:600;color:#f7efe2">8:00 – 18:00</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(240,230,214,.12);font-size:16px;color:rgba(240,230,214,.8)">
+        <span>Utorok</span><span style="font-weight:600;color:#f7efe2">8:00 – 18:00</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(240,230,214,.12);font-size:16px;color:rgba(240,230,214,.8)">
+        <span>Streda</span><span style="font-weight:600;color:#f7efe2">8:00 – 18:00</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(240,230,214,.12);font-size:16px;color:rgba(240,230,214,.8)">
+        <span>Štvrtok</span><span style="font-weight:600;color:#f7efe2">8:00 – 18:00</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(240,230,214,.12);font-size:16px;color:rgba(240,230,214,.8)">
+        <span>Piatok</span><span style="font-weight:600;color:#f7efe2">8:00 – 19:00</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(240,230,214,.12);font-size:16px;color:rgba(240,230,214,.8)">
+        <span>Sobota</span><span style="font-weight:600;color:#f7efe2">9:00 – 17:00</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(240,230,214,.12);font-size:16px;color:rgba(240,230,214,.8)">
+        <span>Nedeľa</span><span style="font-weight:600;color:#f7efe2">zatvorené</span>
+      </div>
+      <div style="margin-top:var(--space-6);display:flex;flex-direction:column;gap:var(--space-2);font-size:17px;color:rgba(240,230,214,.8)">
+        <div>Gustáva Švéniho 1F, 971 01 Prievidza</div>
+        <a href="tel:+421951099521" style="color:var(--color-accent-300);text-decoration:none;font-weight:600">0951 099 521</a>
+      </div>
+      <div style="display:flex;gap:var(--space-3);margin-top:var(--space-6);flex-wrap:wrap">
+        <a href="https://maps.google.com/?q=Gust%C3%A1va+%C5%A0v%C3%A9niho+1F,+971+01+Prievidza" target="_blank" rel="noopener" class="btn btn-primary" style="text-decoration:none;padding:13px 26px;font-size:15px;background:var(--color-accent-500);color:#14100e">Navigovať</a>
+        <a href="tel:+421951099521" class="btn" style="text-decoration:none;padding:13px 26px;font-size:15px;border:1px solid rgba(240,230,214,.3);color:#f0e6d6">Zavolať</a>
+      </div>
+    </div>
+    <div style="border-radius:calc(var(--radius-lg) * 1.4);overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.5);min-height:420px">
+      <iframe title="Mapa — FRAID, Gustáva Švéniho 1F, Prievidza" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=18.615%2C48.769%2C18.640%2C48.780&amp;layer=mapnik&amp;marker=48.7745%2C18.6275" style="width:100%;height:420px;border:0;display:block;filter:saturate(.6) contrast(.9) brightness(.82) invert(.9) hue-rotate(180deg)"></iframe>
+    </div>
+  </div>
+</section>
+
+<section data-reveal class="wrap" style="padding:calc(var(--space-8) * 2.3) var(--space-6)">
+  <div style="display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-4);flex-wrap:wrap;margin-bottom:var(--space-6)">
+    <h2 style="font-size:clamp(30px,3.6vw,46px);margin:0;color:#f7efe2">@fraidcoffee</h2>
+    <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-ghost" style="text-decoration:none;color:var(--color-accent-400)">Sledovať na Instagrame →</a>
+  </div>
+  <div class="grid-4" style="gap:var(--space-3)">
+    <div class="zoom" style="border-radius:var(--radius-md)"><img src="assets/drink-raspberry.jpg" alt="Instagram príspevok" style="width:100%;aspect-ratio:1;object-fit:cover;filter:brightness(.92)"></div>
+    <div class="zoom" style="border-radius:var(--radius-md)"><img src="assets/storefront.jpg" alt="Instagram príspevok" style="width:100%;aspect-ratio:1;object-fit:cover;filter:brightness(.92)"></div>
+    <div class="zoom" style="border-radius:var(--radius-md)"><img src="assets/drink-gooseberry.jpg" alt="Instagram príspevok" style="width:100%;aspect-ratio:1;object-fit:cover;filter:brightness(.92)"></div>
+    <div class="zoom" style="border-radius:var(--radius-md)"><img src="assets/drink-blackberry.jpg" alt="Instagram príspevok" style="width:100%;aspect-ratio:1;object-fit:cover;filter:brightness(.92)"></div>
+  </div>
+</section>
+
+<footer style="background:#0d0a09;color:rgba(240,230,214,.75);padding:calc(var(--space-8) * 1.3) var(--space-6)">
+  <div class="wrap footer-grid" style="gap:var(--space-8)">
+    <div>
+      <img src="assets/logo-fraid.png" alt="FRAID" style="height:38px;width:auto;filter:brightness(0) invert(1);margin-bottom:12px">
+      <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,230,214,.45);margin-bottom:var(--space-4)">First Aid Coffee · Prievidza</div>
+      <p style="font-size:14px;line-height:1.7;color:rgba(240,230,214,.6);max-width:32ch;margin:0">Kaviareň s výberovou kávou, domácimi limonádami a croissantmi. Otvorené každý deň od 8:00.</p>
+      <div style="display:flex;gap:10px;margin-top:var(--space-4)">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="btn" style="text-decoration:none;padding:8px 16px;font-size:13px;border:1px solid rgba(240,230,214,.25);color:#f0e6d6">Instagram</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="btn" style="text-decoration:none;padding:8px 16px;font-size:13px;border:1px solid rgba(240,230,214,.25);color:#f0e6d6">Facebook</a>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-400);margin-bottom:var(--space-4)">Web</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+        <a href="#o-nas" class="f-link">O kaviarni</a>
+        <a href="#menu" class="f-link">Menu &amp; ceny</a>
+        <a href="#galeria" class="f-link">Galéria</a>
+        <a href="#recenzie" class="f-link">Recenzie</a>
+        <a href="#kontakt" class="f-link">Kontakt</a>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-400);margin-bottom:var(--space-4)">Otvorené</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;color:rgba(240,230,214,.7)">
+        <div style="display:flex;justify-content:space-between;gap:12px"><span>Po – Št</span><span style="color:#f0e6d6">8:00 – 18:00</span></div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><span>Piatok</span><span style="color:#f0e6d6">8:00 – 19:00</span></div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><span>Sobota</span><span style="color:#f0e6d6">9:00 – 17:00</span></div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><span>Nedeľa</span><span style="color:rgba(240,230,214,.45)">zatvorené</span></div>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-400);margin-bottom:var(--space-4)">Kontakt</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:15px;color:rgba(240,230,214,.7)">
+        <div>Gustáva Švéniho 1F<br>971 01 Prievidza</div>
+        <a href="tel:+421951099521" class="f-link">0951 099 521</a>
+        <a href="mailto:ahoj@fraid.sk" class="f-link">ahoj@fraid.sk</a>
+        <a href="https://maps.google.com/?q=Gust%C3%A1va+%C5%A0v%C3%A9niho+1F,+971+01+Prievidza" target="_blank" rel="noopener" class="f-link">Zobraziť na mape →</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:calc(var(--space-8) * 1.1);padding-top:var(--space-6);border-top:1px solid rgba(240,230,214,.12);display:flex;justify-content:space-between;gap:var(--space-4);flex-wrap:wrap;font-size:13px;color:rgba(240,230,214,.4)">
+    <div>© 2026 FRAID — First Aid Coffee. Všetky práva vyhradené.</div>
+    <div style="display:flex;gap:var(--space-4)">
+      <a href="#" class="f-link" style="font-size:13px">Ochrana osobných údajov</a>
+      <a href="#" class="f-link" style="font-size:13px">Cookies</a>
+      <a href="#top" class="f-link" style="font-size:13px">Späť hore ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
